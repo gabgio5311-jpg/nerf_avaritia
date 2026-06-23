@@ -1,0 +1,35 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+modId="nerf_avaritia" # <-- Corrigido para bater com o código Java
+version="1.0.0"
+displayName="Nerf Avaritia"
+authors="Gabriel"
+description='''This mod nerf the Sword of the Cosmos.'''
+
+# Forma correta de registrar a config de mixin no Forge 1.20.1
+[[mixins]]
+config="mixins.nerf_avaritia.json"
+
+[[dependencies.nerf_avaritia]] # <-- Corrigido aqui também
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.nerf_avaritia]] # <-- E aqui também
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.21)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.nerf_avaritia]]
+modId = "avaritia"
+mandatory = true
+versionRange = "[1.3.9.8,)"
+ordering = "NONE"
+side = "BOTH"
