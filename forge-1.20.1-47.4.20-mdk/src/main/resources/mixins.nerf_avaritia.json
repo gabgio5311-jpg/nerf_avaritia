@@ -4,7 +4,8 @@
   "package": "com.example.nerfavaritia.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "InfinitySwordMixin"
+    "InfinitySwordMixin",
+    "ToolUtilsMixin"
   ],
   "injectors": {
     "defaultRequire": 1
