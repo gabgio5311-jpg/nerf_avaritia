@@ -1,0 +1,40 @@
+{
+  "display": {
+    "icon": {
+      "item": "avaritia:infinity_sword"
+    },
+    "title": {
+      "text": "you've been trolled",
+      "color": "red",
+      "bold": true
+    },
+    "description": {
+      "text": "Você pegou a Infinity Sword... mas agora ela foi nerfada!",
+      "color": "gray"
+    },
+    "background": "minecraft:textures/gui/advancements/backgrounds/end.png",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "got_infinity_sword": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "avaritia:infinity_sword"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "got_infinity_sword"
+    ]
+  ]
+}
